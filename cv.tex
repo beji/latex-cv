@@ -1,0 +1,221 @@
+\documentclass[10pt,ngerman,a4paper]{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+\usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\title{Lebenslauf}
+\author{Björn Erlwein}
+\date{\vspace{-5ex}} % remove the date
+
+% Do not indent paragraphs
+\setlength{\parindent}{0in}
+% leave halve a line after each paragraph
+\setlength{\parskip}{0.5em}
+
+% Enable multicolumns
+\usepackage{multicol}
+\setlength{\columnsep}{-3.5cm}
+
+% TYPOGRAPHY
+%--------------------------------
+\usepackage{fontspec} 
+\usepackage{xunicode}
+\usepackage{xltxtra}
+%\setmainfont{Cambria}
+\setmainfont{Calibri}
+
+% for images
+\usepackage{graphicx}
+\graphicspath{ {./} }
+
+% disable numbers before section headings
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+% disable page numbers
+\pagenumbering{gobble}
+
+\maketitle
+
+\section{Persönliche Daten}
+\begin{minipage}{0.3\textwidth}
+\begin{tabular}{ll}
+\textbf{Geburtsdatum} & 25.08.1988\\
+\textbf{Geburtsort} & Bayreuth\\
+\textbf{Staatsangehörigkeit} & Deutsch\\
+\textbf{Sprachen} & Deutsch, Englisch
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.6\textwidth}
+\flushright
+\includegraphics[scale=0.5]{portrait}
+\end{minipage}
+\subsection{Kontakt}
+
+Sauerbruchstraße 33\\
+95447 Bayreuth
+
+\begin{tabular}{ll}
+\textbf{Telefon} & 0176/56121312\\
+\textbf{E-Mail} & bjoernerlwein@gmail.com
+\end{tabular}
+
+\section{Schulischer Werdegang}
+
+\begin{tabular}{ll}
+\textbf{2000 - 2018} & Gymnasium Christian Ernestinium, Bayreuth
+\end{tabular}
+
+\section{Beruflicher Werdegang}
+
+\begin{tabular}{lll}
+\textbf{2018 - aktuell} & Fullstack Software Developer & empiriecom GmbH \& Co. KG \\
+\\
+\textbf{2015 - 2018} & Frontend Software Developer & empiriecom GmbH \& Co. KG \\
+\textbf{2012 - 2015} & Frontend Software Developer & BAUR Versand GmbH \& Co. KG\\
+\textbf{2009 - 2012} & Ausbildung Informatikkaufmann & BAUR Versand GmbH \& Co. KG
+\end{tabular}
+
+\section{Schwerpunkte}
+\begin{itemize}
+\item Konzeption und Entwicklung von microfrontend- und microservicebasierten Cloudsystemen
+\item Continuous Integration \& Continuous Delivery
+\item Test Driven Development
+\item Infrastructure as code
+\item Node.JS Entwicklung auf Basis von Typescript \& React
+\end{itemize}
+
+% \newpage
+
+
+\section{Vergangene Großprojekte innerhalb der empiriecom GmbH \& Co. KG}
+\subsection{Entwicklung einer microfrontend basierten Shopplattform}
+Konzeption und Grundlagenentwicklung einer Softmigration des monolithischen Shopsystems auf eine Microfrontend basierte Plattform; Einführung CI/CD \& TDD; Entwicklung einer Cloudbasierten Infrastruktur mit Google Cloud, Kubernetes und Istio.
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Technische Projektleitung, Architekt, Fullstack Entwickler\\
+\textbf{Zeitraum} & Februar 2018 - Februar 2019\\
+\textbf{Entwicklungsmethode} & Kanban
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Entwicklung eines Proof of Concept für eine schrittweise Migrationsstrategie auf Basis von Microfrontends
+\item Nahtlose Integration zwischen Alt- und Neusystem die einen schrittweisen Wechsel von einzelnen Seitenbereichen erlaubt
+\item Einführung von CI/CD basierter Entwicklung
+\item Infrastructure as Code mit terraform
+\item Multicluster Servicemesh auf Basis von Istio
+\item Entwicklung von Softwarebibliotheken und -vorlagen für Microfrontend Fragmente basierend auf
+\begin{itemize}
+\item Node.JS
+\item Typescript
+\item React
+\item Webpack
+\end{itemize}
+\item Entwicklung von Deployment- \& Routingstrategien die einfaches und schnelles Traffic Shifting ermöglichen
+\item Multimandantenfähige Deploymentpipelines und Fragmente
+\end{itemize}
+
+\subsection{Migration der Teams auf die microfrontend basierten Shopplattform}
+Entwicklung von Microfrontend Fragmenten in den Teams; Schrittweiser Rollout 
+der neuen Fragmente
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Technische Projektleitung, Architekt, Support \\
+\textbf{Zeitraum} & Februar 2019 - September 2019\\
+\textbf{Entwicklungsmethode} & Kanban/Scrum
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Schulung der Teams auf die technische und fachliche Basis von EMMA
+\item Fachlicher und Technischer Support der Teams bei der Entwicklung der Fragmente
+\item Wartung, Betrieb und Weiterentwicklung der Kernsysteme
+\end{itemize}
+
+\subsection{Relaunch Mein Konto}
+Neuentwicklung des Mein Konto Bereichs auf Basis der neuen Design Library
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Fullstack Developer \\
+\textbf{Zeitraum} & Februar 2020 - aktuell\\
+\textbf{Entwicklungsmethode} & Kanban/Scrum
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Layout Umsetzungen mit React
+\item Aufsetzen und Integration der Infrastruktur in die EMMA Architektur
+\item Auslagern bestehender Logiken in neue Services
+\end{itemize}
+
+\subsection{Clientseitiges Rendering der Produklisten und Suchergebnisseiten}
+Wechsel eines rein serverseitigen Renderns zu clientseitigem Rendering
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Konzeption und Entwicklung \\
+\textbf{Zeitraum} & Dezember 2017 - Februar 2018\\
+\textbf{Entwicklungsmethode} & Scrum
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Rein clientseitige Renderlogik für
+\begin{itemize}
+\item Filter
+\item Paging
+\item Sortierung
+\end{itemize}
+\item Caching Vereinfachung für serverseitiges Rendering
+\end{itemize}
+
+\subsection{Serviceworker basierter Cache}
+Integration eines Serviceworker basierten caches für HTML und statische Dateien
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Konzeption und Entwicklung \\
+\textbf{Zeitraum} & Oktober 2017 - November 2017\\
+\textbf{Entwicklungsmethode} & Scrum
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Integration des serviceworkers
+\item Optimierung des generierten HTML Codes um cachebare Bereiche zu identifizieren
+\item Implementierung von Austauschlogiken für nicht cachebare Shopbereiche
+\end{itemize}
+
+\subsection{Evaluierung Suchtechnologie}
+Analyse mehrerer Suchsysteme im Vergleich zur verwendeten Lösung
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Analyse \\
+\textbf{Zeitraum} & Juli 2017 - November 2017\\
+\textbf{Entwicklungsmethode} & Scrum
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Erstellung einer Anforderungsmatrix anhand des bestehenden Systems
+\item Analyse mehrerer Suchsysteme anhand der Anforderungsmatrix
+\item Entwicklung einer Entscheidungsgrundlage für Geschäftsführung
+\end{itemize}
+
+\subsection{Migration eines Mandantenshops auf neue Plattform}
+Migration auf die neu eingeführte Shopplattform
+
+\begin{tabular}{ll}
+\textbf{Rolle} & Teilprojektleitung Entwicklung \& Frontend Developer \\
+\textbf{Zeitraum} & November 2016 - März 2017\\
+\textbf{Entwicklungsmethode} & Wasserfall
+\end{tabular}
+
+\subsubsection{Aufgabenbereich / technische Beschreibung}
+\begin{itemize}
+\item Umsetzung neuer Designvorgaben
+\item Migration der Logiken und Contentseiten
+\end{itemize}
+
+% END
+
+\end{document}
